@@ -1,5 +1,6 @@
 export interface ImageModel {
   path: string;
+  fullpath: string;
   name: string;
   description: string;
   alt: string;
@@ -152,4 +153,22 @@ export const Collections: CollectionModel[] = [
       },
     ],
   },
-];
+].map((collection) => {
+  const galleries = collection.galleries.map((gallery) => {
+    const images = gallery.images.map((image) => {
+      const fullpath = `/portfolio/img/${collection.name}/${image.path}`;
+      return {
+        ...image,
+        fullpath,
+      };
+    });
+    return {
+      ...gallery,
+      images,
+    };
+  });
+  return {
+    ...collection,
+    galleries,
+  };
+});

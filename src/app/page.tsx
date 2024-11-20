@@ -4,7 +4,7 @@ import NextImage from "next/image";
 import {Collections, type CollectionModel, type GalleryModel, type ImageModel} from "./images";
 
 // const root = "/portfolio/";
-const img = "/portfolio/img/";
+// const img = "/portfolio/img/";
 
 interface ImageProps{
   image: ImageModel;
@@ -16,8 +16,8 @@ function Img({image}:ImageProps) {
         {image.name}
       </div>
       <NextImage
-        className="dark:invert"
-        src={img + image.path}
+        className=""
+        src={image.fullpath}
         alt={image.alt}
         width={500}
         height={500}
