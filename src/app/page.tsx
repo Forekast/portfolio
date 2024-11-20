@@ -1,6 +1,6 @@
 import Image from "next/image";
 const root = "/portfolio";
-const img = "/portfolio/img";
+// const img = "/portfolio/img";
 
 export default function Home() {
   return (
