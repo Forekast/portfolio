@@ -19,29 +19,47 @@ export interface CollectionModel {
 
 export const Collections: CollectionModel[] = [
   {
-    name: "Design",
+    name: "Web Apps",
     galleries: [
       {
-        name: "Template",
+        name: "Knowledge Management Tool",
         description: "",
         images: [
           {
-            path: "blank.png",
-            name: "Template Image",
-            description: "Template Description",
-            alt: "Template Alt Text",
-          },
-        ],
-      },
-      {
-        name: "Yelena's Manual Therapy",
-        description: "",
-        images: [
-          {
-            path: "yelenas.png",
+            path: "ECA.png",
             name: "name text",
             description: "",
             alt: "alt text 1",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Design",
+    galleries: [
+      // {
+      //   name: "Template",
+      //   description: "",
+      //   images: [
+      //     {
+      //       path: "blank.png",
+      //       name: "Template Image",
+      //       description: "Template Description",
+      //       alt: "Template Alt Text",
+      //     },
+      //   ],
+      // },
+      {
+        name: "Yelena's Manual Therapy",
+        description: "Branding for a Cranial/Sacral Therapy",
+        images: [
+          {
+            path: "yelenas.png",
+            name: "YMT Brand Icon",
+            description:
+              "Icon of a hand — consisting of the initials Y.M. — lifting up a brain",
+            alt: "Icon of the Yelena's Manual Therapy Brand, showing a hand composed of the stylized letter Y and M holding up a minimalist swirl pattern in the shape of a brain",
           },
         ],
       },
@@ -128,23 +146,6 @@ export const Collections: CollectionModel[] = [
         images: [
           {
             path: "claire.png",
-            name: "name text",
-            description: "",
-            alt: "alt text 1",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: "Web Apps",
-    galleries: [
-      {
-        name: "Knowledge Management Tool",
-        description: "",
-        images: [
-          {
-            path: "ECA.png",
             name: "name text",
             description: "",
             alt: "alt text 1",

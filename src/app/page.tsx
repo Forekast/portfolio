@@ -12,6 +12,7 @@ interface ImageProps{
 function Img({image}:ImageProps) {
   return (
     <>
+      {/* Add click-to-expand-to-full-screen view */}
       <div>
         {image.name}
       </div>
@@ -28,6 +29,7 @@ function Img({image}:ImageProps) {
     </>
   )
 }
+
 interface GalleryProps{
   gallery: GalleryModel;
 }
@@ -40,10 +42,16 @@ function Gallery({gallery}:GalleryProps){
   
   return (
     <>
+      <div>
+        <div className="text-3xl">{gallery.name}</div>
+        <div className="text-lg">{gallery.description}</div>
+      </div>
+      {/* Present in either a Carousel or Grid here */}
       {imageFragments}
     </>
   )
 }
+
 interface CollectionProps{
   collection: CollectionModel;
 }
@@ -55,6 +63,7 @@ function Collection({collection}:CollectionProps){
   });
   return (
     <>
+    <div className="text-5xl">{collection.name}</div>
       {galleryFragments}
     </>
   )
